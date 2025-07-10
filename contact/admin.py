@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Contact
+from .models import Contact, Category
 
 # Register your models here.
 @admin.register(Contact)
@@ -20,3 +20,9 @@ class ContactAdmin(admin.ModelAdmin):
 
     # Adicionando um link no campo nome
     list_display_links = ('id', 'first_name',)
+
+
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ('name',)
+    ordering = '-id',
