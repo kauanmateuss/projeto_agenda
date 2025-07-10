@@ -12,7 +12,7 @@ class ContactAdmin(admin.ModelAdmin):
     search_fields = ('first_name', 'last_name', 'phone', 'email')
 
     # Definindo a quantidade de registros por página
-    list_per_page = 10
+    list_per_page = 20
     list_max_show_all = 100     # Mostra todos os registros
 
     # quais campos podem ser editados diretamente na lista
