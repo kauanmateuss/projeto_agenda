@@ -119,9 +119,17 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# Definindo o diretório de arquivos estáticos
 STATICFILES_DIRS = (
     BASE_DIR / 'base_static',
 )
+
+#configurando a pasta para collectstatic
+STATIC_ROOT = BASE_DIR / 'static'
+
+# Diretório para arquivos de mídia (uploads)
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media' # Diretório onde os arquivos de mídia serão armazenados
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
